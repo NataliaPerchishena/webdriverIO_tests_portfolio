@@ -93,12 +93,7 @@ describe('Github tests', () => {
 
     it('check github Enterprise link', async () => {
         await browser.url('https://github.com/');
-
         
-          const EnterpriseMenu = await $('//button[contains(text(), "Enterprise")]'); 
-          await EnterpriseMenu.moveTo();
-          await browser.pause(500);
-          
         await MainPage.clickOnEnterpriseLink()
 
         let startTrialLink = await $('//div[contains(@class, "CTABanner-content")]//a[contains(@href, "/organizations/enterprise_plan")]')
