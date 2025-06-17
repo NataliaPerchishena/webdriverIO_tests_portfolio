@@ -5,6 +5,7 @@ class MainPage {
     get SearchBtn() { return $('.header-search-button'); }
     get SearchInput() { return $('#query-builder-test') }
     get PricingLink() { return $('a[href="https://github.com/pricing"]'); }
+    get EnterpriseMenu () { return $('//button[contains(text(), "Enterprise")]')}
     get EnterpriseLink() { return $('a[href = "/enterprise"]'); }
     
     
@@ -31,6 +32,7 @@ class MainPage {
     }
 
     async clickOnEnterpriseLink() {
+        await this.EnterpriseMenu.moveTo();
         await this.EnterpriseLink.click();
     }
 
