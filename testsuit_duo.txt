@@ -1,0 +1,47 @@
+1. Check that search field is visible and enable
+Steps:
+- Go to url https://dou.ua/
+- Find element Search (#txtGlobalSearch)
+- Check that element is visible och enable
+Expected result:
+Element is visible och enable
+
+2. Check that search field have placeholder
+Steps:
+- Go to url https://dou.ua/
+- Find element Search (#txtGlobalSearch)
+- Check placeholder text
+Expected result:
+placeholder text is "Пошук"
+
+3. Check that search word is pressent in url
+Steps:
+- Go to url https://dou.ua/
+- Find element Search (#txtGlobalSearch)
+- Type word (t.ex. "tester")
+- Click (or type enter)
+- Check url
+Expected result:
+Url has text = typed word ((t.ex. "tester"))
+
+4. Check that search word is pressent in search result
+Steps:
+- Go to url https://dou.ua/
+- Find element Search (#txtGlobalSearch)
+- Type word (t.ex. "tester")
+- Click (or type enter)
+- find results of search
+- check text
+Expected result:
+Text iclude typed word (t.ex. "tester")
+
+5. Check that search field is not present on page after search
+Steps:
+- Go to url https://dou.ua/
+- Find element Search (#txtGlobalSearch)
+- Type word (t.ex. "tester")
+- Click (or type enter)
+- Find element Search (#txtGlobalSearch)
+- Check that element search is not present
+Expected result:
+Elemet is not present
