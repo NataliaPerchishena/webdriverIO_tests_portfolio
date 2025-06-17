@@ -15,10 +15,14 @@ class NewsLetterPage {
     }
    
     async checkConsentCheckBox () {
-await this.ConsentCheckBox.click();
+        await this.ConsentCheckBox.scrollIntoView()
+        await this.ConsentCheckBox.waitForDisplayed();
+        await this.ConsentCheckBox.click();
     }
 
     async clickOnSubscribeBtn () {
+        await this.SubscribeBtn.scrollIntoView()
+        await this.SubscribeBtn.isClickable();
         await this.SubscribeBtn.click();
     }
 
